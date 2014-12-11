@@ -5,8 +5,11 @@
 	width: 100%;
 	height: auto;
 	padding-top: 5em;
-	text-align: center;
 }
+
+.center {
+	text-align:center;
+}	
 
 .teams {
 	.img {
@@ -37,7 +40,7 @@
   left: 0; 
 }
 
-.img {
+.teams img {
 	max-width:100%;
 	display: block;
 	}
@@ -46,3 +49,97 @@
 max-width: 100%;
 height:auto;
 }	
+
+.players {
+	margin-bottom: 20px;
+}
+
+.players img {
+	max-width: 56%;
+	padding-top:10px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+
+.info-teams {
+	text-align:left;
+	margin-top: 30px;
+	color: #fff;
+}
+
+.info-teams figcaption {
+	text-align:center;
+}
+
+.info-teams p {
+	padding: 10px 0px;
+	font-weight: 300;
+	clear: both;
+}
+
+.info-teams p span{
+	font-weight: 500;
+}
+
+.info-teams i {
+	padding-right: 7px;
+	color: #A62103;
+}
+
+.teams a {
+	text-decoration:none;
+	color: #fff;
+}
+
+.teams a:hover {
+	color: #003366;
+}
+
+.teams .btn {
+display: inline-block;
+vertical-align: top;
+background-color: transparent;
+position: relative;
+padding: 10px 25px;
+font: 16px/20px 'apex-newmedium', sans-serif;
+text-transform: uppercase;
+text-decoration: none;
+border: 1px solid transparent;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+-webkit-transition: all .3s;
+transition: all .3s;
+}
+
+.teams .btn-again {
+color: #fff;
+border-color: #fff;
+text-align: center;
+margin: 20px 0px 50px 0px;
+}
+
+.teams .btn-again:hover {
+	background-color: #fff;
+	border-color: #fff;
+	color: #003366;
+}
+
+.margin-bottom40 {
+	margin-bottom: 40px;
+	margin-top:50px;
+}
+
+.text-white {
+	color: #fff;
+}
+
+
+@media all and (max-width 480px) {
+
+.info-teams {
+text-align: center;
+}
+
+}
