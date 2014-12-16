@@ -657,7 +657,7 @@ input, textarea, td, th, tr, table {
   text-align: center; }
 
 .answer-group {
-  padding-top: 3em;
+  padding-top: 1em;
   padding-bottom: 0em; }
 
 .answer {
@@ -698,10 +698,17 @@ h1 {
   margin-bottom: 30px; }
 
 .stars {
-  width: 17px;
+  width: 22px;
   margin-right: 20px;
   margin-left: 20px;
   margin-top: 80px; }
+
+.stars-2 {
+  width: 22px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px; }
 
 .start-button {
   background-image: url(../../lib/assets/ball.png);
@@ -714,49 +721,39 @@ h1 {
   color: #fff9f9;
   font-size: 20px; }
 
-.start-button a:link, .start-button a:visited {
+a:link, a:visited, a:hover {
   text-decoration: none;
   color: #fff9f9; }
 
-.start-button a:hover {
-  text-decoration: none;
-  color: #4f5b8b; }
-
 .button-blue {
-  width: 130px;
+  width: 150px;
   background-color: transparent;
   border-style: none;
   border-top: solid #4f5b8b;
   padding: 15px;
-  font-family: 'Graduate', cursive;
+  font-family: 'Open-sans', sans-serif;
+  font-weight: 300;
   color: #fff9f9;
-  font-size: 20px; }
+  font-size: 16px; }
 
-.button-blue a:link, .button-white a:visited {
+.button-blue:hover {
   text-decoration: none;
-  color: #fff9f9; }
-
-.button-blue a:hover {
-  text-decoration: none;
-  color: #4f5b8b; }
+  background-color: #4f5b8b; }
 
 .button-red {
-  width: 130px;
+  width: 150px;
   background-color: transparent;
   border-style: none;
   border-top: solid #a45656;
   padding: 15px;
-  font-family: 'Graduate', cursive;
+  font-family: 'Open-sans', sans-serif;
+  font-weight: 300;
   color: #fff9f9;
-  font-size: 20px; }
+  font-size: 16px; }
 
-.button-red a:link, .button-white a:visited {
+.button-red:hover {
   text-decoration: none;
-  color: #fff9f9; }
-
-.button-red a:hover {
-  text-decoration: none;
-  color: #a45656; }
+  background-color: #a45656; }
 
 .cover {
   background-size: cover;
