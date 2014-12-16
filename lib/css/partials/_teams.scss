@@ -180,16 +180,18 @@ $player-padding : 10px;
 	opacity:1;
 	bottom:$player-padding;
 }
-img {
-		max-width:100%;
-		padding-right:20px;
-}
+
+// img {
+// 		max-width:100%;
+// 		padding-right:20px;
+// }
 
 
 @media all and (max-width 480px) {
 
 .info-teams {
-text-align: center;
+	text-align: center;
+	margin: auto 0;
 }
 
 }

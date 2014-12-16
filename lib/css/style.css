@@ -906,12 +906,9 @@ a:link, a:visited, a:hover {
   opacity: 1;
   bottom: 10px; }
 
-img {
-  max-width: 100%;
-  padding-right: 20px; }
-
 @media all and (max-width 480px) {
   .info-teams {
-    text-align: center; } }
+    text-align: center;
+    margin: auto 0; } }
 
 /*# sourceMappingURL=style.css.map */
