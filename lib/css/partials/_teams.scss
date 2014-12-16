@@ -60,7 +60,6 @@ height:auto;
 }
 
 .info-teams {
-	font-family: '$open-sans';
 	text-align:left;
 	margin-top: 30px;
 	color: #fff;
@@ -71,6 +70,7 @@ height:auto;
 }
 
 .info-teams p {
+	font-family: '$open-sans';
 	padding: 10px 0px;
 	font-weight: 300;
 	clear: both;
