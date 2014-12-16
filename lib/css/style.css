@@ -682,8 +682,8 @@ input, textarea, td, th, tr, table {
   left: 0; }
 
 h1 {
-  font-family: '$graduate';
-  color: #fff9f9;
+  font-family: "Graduate", serif;
+  color: #FBFFFB;
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 50px;
@@ -757,9 +757,9 @@ a:link, a:visited, a:hover {
   text-decoration: none;
   background-color: #a45656; }
 
-.cover {
+.team-cover {
   background-size: cover;
-  background-color: #003366;
+  background-color: #2A2F30;
   width: 100%;
   height: auto;
   padding-top: 5em; }
@@ -807,23 +807,25 @@ a:link, a:visited, a:hover {
 .info-teams {
   text-align: left;
   margin-top: 30px;
-  color: #fff; }
+  color: #FBFFFB; }
 
 .info-teams figcaption {
   text-align: center; }
 
 .info-teams p {
-  font-family: '$graduate';
+  font-family: "Open Sans", sans-serif;
   padding: 10px 0px;
   font-weight: 300;
+  letter-spacing: .1em;
   clear: both; }
 
 .info-teams p span {
-  font-weight: 500; }
+  font-weight: 500;
+  text-transform: uppercase; }
 
 .info-teams i {
   padding-right: 7px;
-  color: #A62103; }
+  color: #FBFFFB; }
 
 .teams a {
   text-decoration: none;
@@ -874,7 +876,7 @@ a:link, a:visited, a:hover {
   overflow: hidden; }
 
 .players img {
-  width: 100%;
+  width: 75%;
   opacity: 1;
   transition: all .5s;
   background-color: #fff;

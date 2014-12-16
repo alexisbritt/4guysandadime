@@ -1,7 +1,7 @@
 
-.cover {
+.team-cover {
 	background-size: cover;
-	background-color: #003366;
+	background-color: #2A2F30;
 	width: 100%;
 	height: auto;
 	padding-top: 5em;
@@ -43,7 +43,7 @@
 .teams img {
 	max-width:100%;
 	display: block;
-	}
+}
 
 .helmets {
 max-width: 100%;
@@ -62,7 +62,7 @@ height:auto;
 .info-teams {
 	text-align:left;
 	margin-top: 30px;
-	color: #fff;
+	color: #FBFFFB;
 }
 
 .info-teams figcaption {
@@ -70,19 +70,21 @@ height:auto;
 }
 
 .info-teams p {
-	font-family: '$graduate';
+	font-family: $open-sans;
 	padding: 10px 0px;
 	font-weight: 300;
+	letter-spacing: .1em;
 	clear: both;
 }
 
 .info-teams p span{
 	font-weight: 500;
+	text-transform: uppercase;
 }
 
 .info-teams i {
 	padding-right: 7px;
-	color: #A62103;
+	color: #FBFFFB;
 }
 
 .teams a {
@@ -144,7 +146,7 @@ $player-padding : 10px;
 }
 
 .players img {
-	width:100%;
+	width:75%;
 	opacity:1;
 	transition:all .5s;
 	background-color: #fff;
