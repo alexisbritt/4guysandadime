@@ -682,7 +682,7 @@ input, textarea, td, th, tr, table {
   left: 0; }
 
 h1 {
-  font-family: "Graduate", serif;
+  font-family: '$graduate';
   color: #fff9f9;
   margin-top: 30px;
   margin-bottom: 30px;
