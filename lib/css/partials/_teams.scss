@@ -181,10 +181,10 @@ $player-padding : 10px;
 	bottom:$player-padding;
 }
 
-// img {
-// 		max-width:100%;
-// 		padding-right:20px;
-// }
+img {
+		max-width:100%;
+		padding-right: 0;
+}
 
 
 @media all and (max-width 480px) {

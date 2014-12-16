@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Graduate);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 .align-left {
   float: left; }
 
@@ -96,14 +98,14 @@ input, textarea, td, th, tr, table {
 .nav a {
   display: block;
   background-color: transparent;
-  color: #03c; }
+  color: #eee; }
 .nav a:hover, .nav .active a {
   color: white;
   text-decoration: none; }
 .nav a:hover {
-  background-color: #3366ff; }
+  background-color: white; }
 .nav .active a {
-  background-color: #03c; }
+  background-color: #eee; }
 
 .btn {
   background-color: repeating-linear-gradient(45deg, #778105, #816c05 10px, #bdcd07 10px, #bdcd07 20px);
@@ -680,7 +682,7 @@ input, textarea, td, th, tr, table {
   left: 0; }
 
 h1 {
-  font-family: 'Graduate', cursive;
+  font-family: "Graduate", serif;
   color: #fff9f9;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -905,6 +907,10 @@ a:link, a:visited, a:hover {
 .players:hover span.bottom {
   opacity: 1;
   bottom: 10px; }
+
+img {
+  max-width: 100%;
+  padding-right: 0; }
 
 @media all and (max-width 480px) {
   .info-teams {
