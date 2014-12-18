@@ -1,68 +1,3 @@
-html {
-      height: 100%;
-    }
-body {
-      padding: 0;
-      text-align: center;
-      font-family: 'open sans';
-      position: relative;
-      margin: 0;
-      height: 100%;
-      -webkit-font-smoothing: antialiased;
-}
-
-
-.wrapper {
-	height: 100% !important;
-	height: 100%;
-	margin: 0 auto; 
-	overflow: hidden;
-}
-
-.main {
-  float: left;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.main section .page_container {
-  position: relative;
-  margin: 0 auto 0;
-  z-index: 3;
-}
-.main section  {
-  overflow: hidden;
-}
-
-.page1{
-	background-color: #103D63;
-  text-align: center;
-}
-
-.page2{
-	background-color: #6A9B1E;
-}
-
-.page3{
-	background-color: #8D6F07;
-}
-
-.page4{
-	background-color: #278B9D;
-}
-
-.page5{
-	background-color: #8C7A09;
-}
-
-.page6{
-	background-color: #550404;
-}
-
-.page7{
-	background-color: #2A295E;
-}
-
 
 .ball {
   position: fixed;
@@ -219,10 +154,10 @@ body {
 
 
 .player_1 > img{
-  width: 20%;
-  height: 40%;
-  margin-top: 50%;
-  margin-left: -40%;
+  position: relative;
+  z-index: -1;
+  width: 10%;
+  height: 20%;
   -webkit-animation-name: rush;
   -webkit-animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
@@ -238,25 +173,14 @@ body {
 
 /* WebKit and Opera browsers */
 @-webkit-keyframes rush {
-  from{
-    margin-left: -40%;
-    -webkit-animation-timing-function: ease-out;
-  }
-  to {
-    margin-left: 80%;
-  }
-}
-
-
-/* all other browsers */    
-@keyframes rush {
-  from{
-    margin-left: -40%;
-    animation-timing-function: ease-out;
-  }
-  to {
-    margin-left: 80%;
-  }
+    0% {
+        -webkit-transform: translateX(-100%);
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+        -webkit-opacity: 1;
+    }
 }
 
 .player_2 > img{
@@ -378,4 +302,130 @@ body {
   to {
     margin-top: 10%;
   }
+}
+
+/*
+==============================================
+slideRight
+==============================================
+*/
+
+
+.titleSlide{
+    animation-name: titleSlide;
+    -webkit-animation-name: titleSlide; 
+
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out;     
+    visibility: visible !important; 
+}
+
+
+
+@-webkit-keyframes titleSlide {
+    0% {
+        -webkit-transform: translateX(-50%);
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+        -webkit-opacity: 1;
+    }
+}
+
+.tagSlide{
+    animation-name: tagSlide;
+    -webkit-animation-name: tagSlide; 
+
+    animation-duration: 1.5s; 
+    -webkit-animation-duration: 1.5s;
+
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out;     
+    visibility: visible !important; 
+}
+
+
+
+@-webkit-keyframes tagSlide {
+    0% {
+        -webkit-transform: translateX(-75%);
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(00%);
+        -webkit-opacity: 1;
+    }
+}
+
+.description{
+    animation-name: description;
+    -webkit-animation-name: description; 
+
+    animation-duration: 1.75s; 
+    -webkit-animation-duration: 1.75s;
+
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out;     
+    visibility: visible !important; 
+}
+
+
+
+@-webkit-keyframes description {
+    0% {
+        -webkit-transform: translateX(-10%);
+        -webkit-opacity: 0;
+    }
+    30% {
+        -webkit-transform: translateX(-10%);
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(00%);
+        -webkit-opacity: 1;
+    }
+}
+
+.stars, .stars-2{
+    animation-name: starAnimation;
+    -webkit-animation-name: starAnimation; 
+
+    animation-duration: 2s;   
+    -webkit-animation-duration: 2s;
+
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;
+
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    animation-iteration-count: infinite;     
+
+    visibility: visible !important; 
+}
+
+
+
+@-webkit-keyframes starAnimation {
+    0% {
+        -webkit-transform: scale(1);
+        opacity: 1;       
+    }
+    25% {
+        -webkit-transform: scale(.95);   
+    }
+    60% {
+        -webkit-transform: scale(.75);
+        opacity: 0.9;
+    }
+    90% {
+        -webkit-transform: scale(0.95);
+
+    }   
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1; 
+    }       
 }
