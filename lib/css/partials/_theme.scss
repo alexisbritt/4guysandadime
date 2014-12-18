@@ -12,7 +12,6 @@
 	padding-bottom: 0em;
 }
 .answer {
-	
 	display: inline-block;
 	height: 30vh;
 	padding-top: 5em;
@@ -87,22 +86,24 @@ a:link, a:visited, a:hover {
 		color: #fff9f9;
 }
 
+.answer > a {
+	display: inline-block;
+	width: 75%;
+	text-align: center;
+	padding: .75em 0;
+	text-decoration: none;
+	transition: 150ms all ease-in-out;
+}
+
 .button-blue {
-	width: 150px;
 	background-color: rgba(0,0,0,0);
 	border-style: none;
     border-top: solid #4f5b8b;
    	padding: 15px;
-
 	font-family: 'Open-sans', sans-serif;
 	font-weight: 300;
 	color: #fff9f9;
 	font-size: 16px;
-}
-
-.button-blue:hover {;
-		text-decoration: none;
-		background-color: #4f5b8b;
 }
 
 .button-red {
@@ -116,6 +117,11 @@ a:link, a:visited, a:hover {
 	font-weight: 300;
 	color: #fff9f9;
 	font-size: 16px;
+}
+
+.button-blue:hover {;
+	text-decoration: none;
+	background-color: #4f5b8b;
 }
 
 .button-red:hover {
