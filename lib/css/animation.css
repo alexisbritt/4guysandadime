@@ -154,10 +154,10 @@
 
 
 .player_1 > img{
-  width: 20%;
-  height: 40%;
-  margin-top: 50%;
-  margin-left: -40%;
+  position: relative;
+  z-index: -1;
+  width: 10%;
+  height: 20%;
   -webkit-animation-name: rush;
   -webkit-animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
@@ -173,25 +173,14 @@
 
 /* WebKit and Opera browsers */
 @-webkit-keyframes rush {
-  from{
-    margin-left: -40%;
-    -webkit-animation-timing-function: ease-out;
-  }
-  to {
-    margin-left: 80%;
-  }
-}
-
-
-/* all other browsers */    
-@keyframes rush {
-  from{
-    margin-left: -40%;
-    animation-timing-function: ease-out;
-  }
-  to {
-    margin-left: 80%;
-  }
+    0% {
+        -webkit-transform: translateX(-100%);
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+        -webkit-opacity: 1;
+    }
 }
 
 .player_2 > img{
